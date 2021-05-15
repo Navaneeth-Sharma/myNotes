@@ -20,8 +20,10 @@ def binary_search(arr, key):
         if key<arr[mid]:
             h = mid-1
             mid = (l+h)//2
-        else:
+        if key==arr[mid]:
             return mid
+        else:
+            return -1
 
 
 
@@ -39,7 +41,7 @@ def recBin_search(l, h, key):
         if A[l]==key:
             return l
         else:
-            return 0
+            return -1
     else:
         mid=(l+h)//2
         if key==A[mid]:
