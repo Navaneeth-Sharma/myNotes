@@ -20,10 +20,10 @@ def binary_search(arr, key):
         if key<arr[mid]:
             h = mid-1
             mid = (l+h)//2
-        if key==arr[mid]:
-            return mid
         else:
-            return -1
+            return mid
+     
+     return -(l+1)
 
 
 
