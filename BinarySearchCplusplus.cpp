@@ -18,15 +18,13 @@ int binSearch(int arr[], int length, int key){
             h=mid-1;
             mid=(l+h)/2;
         }
-        if(key==arr[mid]){
-            return mid;
-        }
+        
         else{
-            return -1;
+            return mid;
         }
     }
 
-    return -1;
+    return -(l+1);
     
 }
 
