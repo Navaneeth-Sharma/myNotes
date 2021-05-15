@@ -28,6 +28,7 @@ def binary_search(arr, key):
 # Another Simple Array
 A = [1,2,3,5,8]
 
+# Binary Search Using Reccursive Approach
 def recBin_search(l, h, key):
     '''
     l --> low index
